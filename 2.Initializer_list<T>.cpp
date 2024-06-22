@@ -8,11 +8,11 @@
 using namespace std;
 
 // функция, аргументами которой служит список значений в фигурных скобках
-void printValues(std::initializer_list<int> values) {
+void printValues(initializer_list<int> values) {
 	for (auto value : values) {
-		std::cout << value << " ";
+		cout << value * 2 << " ";
 	}
-	std::cout << std::endl;
+	cout << endl;
 }
 
 int main() {
