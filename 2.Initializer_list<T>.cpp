@@ -27,7 +27,7 @@ int main() {
 	musicGenres = { "pop", "metal", "rap", "jazz", "falk", "blues", "phonk" };
 	// используем итератор для вывода элементов
 	for (auto it = musicGenres.begin(); it != musicGenres.end(); ++it) {
-		std::cout << *it << " ";
+		cout << *it << " ";
 	}
 
 	cout << endl; 
