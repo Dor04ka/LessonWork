@@ -42,6 +42,13 @@ public:
 	Human(string Name, int Age, int Weight) :Human(Name, Age) {
 		this->Weight = Weight;
 	}
+
+	// Метод вывода информации о человеке
+	void printInfo() const {
+		cout << "Name: " << Name << ", Age: " << Age << ", Weight: " << Weight << endl;
+	}
+
+private:
 	// поля
 	string Name;
 	int Age;
@@ -57,4 +64,9 @@ int main() {
 	Human a("Bogdan", 19, 500);
 	// вызывается конструтор с 3мя параметрами, но тот делегирует свой вызов второму конструтору с 2мя параметрами
 	// второй же делегирует вызов первому конструктору. Получается такая "матрешка"
+	Human b("Dora", 24);
+	Human c("BOOOM");
+	a.printInfo();
+	b.printInfo();
+	c.printInfo();
 }
